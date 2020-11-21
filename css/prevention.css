@@ -84,10 +84,10 @@
   margin: 10px 0;
   padding: 6px;
 }
-.subimt{
+.submit{
   text-align: right;
 }
-.subimt button{
+.submit button{
   color: #222;
   font-weight: bold;
   font-size: 20px;
