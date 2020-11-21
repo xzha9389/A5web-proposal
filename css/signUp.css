@@ -8,7 +8,6 @@
 
 .main{
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
   padding-bottom: 40px;
 }
@@ -32,9 +31,15 @@
 .input input,select,option{
   width: 100%;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 28px;
   color: #111;
   padding: 6px 12px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #737373;
+}
+input.red{
+  border: 1px solid #fd1200;
 }
 .submit{
   text-align: right;
@@ -54,7 +59,7 @@
   width: 220px;
   height: 530px;
   padding: 10px 20px;
-  background: #fbb8ce;
+  background: #ffe2ec;
   border-radius: 6px;
   margin-top: 20px;
 }
@@ -66,19 +71,33 @@
   text-align: left;
 }
 .right .login{
-  border: 1px solid #E91E63;
+  border: 1px solid #ff3479;
   text-align: center;
   font-size: 24px;
-  color: #E91E63;
   line-height: 44px;
-  background: #FCE4EC;
+  background: #ff6295;
   margin-top: 20px;
   cursor: pointer;
   border-radius: 3px;
 }
+.right .login:hover{
+  background: #ff0b5e;
+}
+.right .login a{
+  color: #fff;
+  font-weight: bold;
+}
+
 
 @media screen and (max-width: 700px) {
+  .main{
+    flex-wrap: wrap;
+  }
   .input{
+    width: 100% !important;
+  }
+  .comments{
+    flex: initial !important;
     width: 100% !important;
   }
 }

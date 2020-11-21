@@ -6,6 +6,7 @@
   z-index: 2;
   top: 0;
   width: 100%;
+  background: #fff;
 }
 
 .nav {
@@ -22,6 +23,14 @@
   line-height: 70px;
   font-weight: bold;
   position: relative;
+}
+
+.nav .logo{
+  width: 25%;
+}
+.nav .logo img{
+  width: 100%;
+  height: auto;
 }
 
 .nav .Prevention {
@@ -44,10 +53,10 @@
   position: absolute;
   top: 70px;
   width: 100%;
-  border: 1px solid #eee;
+  border: 1px solid #8646f7;
   box-shadow: 0px 0px 20px #eaeaea;
   display: none;
-  background: #fff;
+  background: #8646f7;
 }
 
 .nav .list:hover .Login {
@@ -60,5 +69,9 @@
   }
   .nav .logo {
     width: 100%;
+  }
+  .nav .logo img{
+    width: 300px;
+    height: auto;
   }
 }

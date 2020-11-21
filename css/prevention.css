@@ -1,35 +1,44 @@
 
 .sub-title{
-  font-size: 20px;
+  font-size: 28px;
   color: #f91302;
   font-weight: bolder;
-  line-height: 24px;
+  line-height: 40px;
   padding-top:30px ;
   padding-bottom: 24px;
 }
 .text{
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 19px;
+  line-height: 26px;
   padding-bottom: 24px;
+  font-weight: bold;
 }
 .text-ul{
-  margin-left: 36px;
   padding-bottom: 24px;
 }
-.text-ul li{
+.text-ul .li{
   margin-bottom: 12px;
   line-height: 22px;
   font-size: 16px;
-}
-.text-ul li div{
   color: #9932CD;
+}
+.text-ul .li div{
+  overflow: hidden;
+}
+.text-ul .li .pointer{
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 .title{
   font-size: 30px;
   line-height: 40px;
   text-align: center;
   padding: 10px 0 20px;
-  color: #ffc53b;
+  color: #3f51b5;
 }
 
 .video{
@@ -83,6 +92,12 @@
   width: 240px;
   margin: 10px 0;
   padding: 6px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #737373;
+}
+.inputtext.red{
+  border: 1px solid #fd1200;
 }
 .submit{
   text-align: right;

@@ -1,13 +1,21 @@
+.baground{
+  background-image: url("../images/shop/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .title{
   color: #673ab7;
-  font-size: 30px;
-  line-height: 40px;
-  padding: 40px 0 20px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  padding: 25px 0 10px;
   text-align: center;
 }
 .remind{
   color: #ff5572;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 40px;
   padding: 20px 0;
 }
@@ -35,15 +43,24 @@
   margin-left: 10px;
   font-size: 16px;
   line-height: 30px;
-  border: 1px solid #444;
+  border: 1px solid #b3b3b3;
   text-align: center;
   cursor: pointer;
   color: #444;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 7px 7px 18px 0 #ccc;
+}
+.product .list .left .buy:hover{
+  background: #4CAF50;
+  color: #fff;
+  border-color: #4CAF50;
+  box-shadow: 7px 7px 15px 0 #868686;
 }
 .product .list .right div{
   color: #666;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 25px;
   padding-bottom: 5px;
   padding-left: 12px;
 }

@@ -15,7 +15,7 @@
     <div class="nav">
       <div class="logo">
         <a href="/">
-          <img src="images/logo.png" alt="" width="350" height="76">
+          <img src="images/logo.png" alt="">
         </a>
       </div>
       <div class="list">
@@ -27,7 +27,7 @@
       <div class="list">
         <a href="signUp.html" class="Signup">Sign Up</a>
         <div class="Login">
-          <a href="login.html">Log In</a>
+          <a href="login.html" style="color: #fff;font-size: 20px">Log In</a>
         </div>
       </div>
     </div>
@@ -43,27 +43,27 @@
     <div class="form">
       <div class="input" style="width: 260px;">
         <div>First Name</div>
-        <input type="text">
+        <input type="text" id="First">
       </div>
       <div class="input" style="width: 260px;">
         <div>Last Name</div>
-        <input type="text">
+        <input type="text" id="Last">
       </div>
 
       <div style="width: 100%;height: 1px"></div>
       <div class="input" style="width: 360px;">
         <div>Date of Birth</div>
-        <input type="date">
+        <input type="date" id="Birth">
       </div>
       <div style="width: 100%;height: 1px"></div>
 
       <div class="input" style="width: 50%;">
         <div>Mobile</div>
-        <input type="tel" placeholder="eg: 041111111">
+        <input type="tel" placeholder="eg: 041111111" id="tel">
       </div>
       <div class="input" style="width: 50%;">
         <div>Email Address</div>
-        <input type="text" placeholder="plase enter connect email">
+        <input type="text" placeholder="plase enter connect email" id="email">
       </div>
 
       <div class="input" style="width: 200px;">
@@ -71,36 +71,53 @@
         <select>
           <option value="NSW">NSW</option>
           <option value="ACT">ACT</option>
+          <option value="Queensland">Queensland</option>
+          <option value="SA">SA</option>
+          <option value="Tasmania">Tasmania</option>
+          <option value="VIC">VIC</option>
+          <option value="Western Australia">Western Australia</option>
         </select>
       </div>
       <div class="input" style="width: 200px;">
         <div>City / Suburb</div>
-        <input type="text">
+        <input type="text" id="City">
       </div>
       <div class="input" style="width: 200px;">
         <div>Post Code</div>
-        <input type="text">
+        <input type="text" id="Post">
       </div>
       <div style="width: 100%;height: 1px"></div>
 
       <div class="input" style="width: 400px;">
         <div>Building Address</div>
-        <input type="text" placeholder="eg: xxx street , 1016">
+        <input type="text" placeholder="eg: xxx street , 1016" id="Address">
       </div>
       <div style="width: 100%;height: 1px"></div>
 
       <div class="input" style="width: 475px;">
         <div>Password</div>
-        <input type="text" placeholder="only5-12 digiters or letters are allowed in password">
+        <input type="text" placeholder="only5-12 digiters or letters are allowed in password" id="password">
+      </div>
+
+      <div class="input" style="width: 500px;">
+        <div>How satisfied are you with this website? And why?</div>
+        <div style="display: flex;align-items: center;flex-wrap: wrap;">
+          <div style="color: #333;font-weight: normal;padding-bottom: 0">
+            <input class="radio" type="radio" name="isius3" value="1" style="width: 23px">1-4&nbsp;&nbsp;&nbsp;
+            <input class="radio" type="radio" name="isius3" value="2" style="width: 23px">5-7&nbsp;&nbsp;&nbsp;
+            <input class="radio" type="radio" name="isius3" value="3" style="width: 23px">8-10&nbsp;&nbsp;&nbsp;
+          </div>
+          <input type="text" style="flex: 1" placeholder="comments" class="comments" id="comments">
+        </div>
       </div>
 
       <div class="submit">
-        <button>Submit</button>
+        <button id="Submit">Submit</button>
       </div>
     </div>
     <div class="right">
-      <div class="title" style="border-bottom: 1px solid #3F51B5;">Has&nbsp;&nbsp;&nbsp;&nbsp;been <br> a member ?</div>
-      <div class="title">Log&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In <br> Right Now !</div>
+      <div class="title" style="border-bottom: 1px solid #3F51B5;">Has been a member?</div>
+      <div class="title" style="font-size: 16px;line-height: 26px;">Log in and choose your product RIGHT NOW! Remember: purchase one item, donate one dollar for our charity by your name.</div>
       <div class="login">
         <a href="login.html">Log In</a>
       </div>
@@ -139,5 +156,6 @@
     </div>
   </div>
 </div>
+<script src="js/signup.js"></script>
 </body>
 </html>

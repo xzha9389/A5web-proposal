@@ -6,5 +6,20 @@ window.onload=function () {
     iframe.style.height=video.offsetWidth*0.562+'px';
   }
   window.onresize=changeHeight;
-  changeHeight()
+  changeHeight();
+
+  var Answer=document.querySelector('#Answer');
+  var submit=document.querySelector('#submit');
+  submit.addEventListener('click',function () {
+    if(Answer.value){
+      Answer.className='inputtext'
+    }else {
+      Answer.className='red inputtext'
+    }
+  })
+  Answer.addEventListener('input',function () {
+    if(this.value){
+      this.className='inputtext'
+    }
+  })
 }
