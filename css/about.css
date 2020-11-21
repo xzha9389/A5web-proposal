@@ -1,0 +1,55 @@
+.about{
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+.about .top{
+  display: flex;
+  align-items: flex-start;
+}
+.about .left div{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 30px 60px;
+  cursor: pointer;
+}
+.about .left div:hover{
+  background-position: bottom left;
+}
+.about .desc {
+  padding-left: 26px;
+  flex: 1;
+}
+
+.about .desc div{
+  color: #444;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+.message{
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.message div{
+  color: #444;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 8px;
+}
+.message u{
+  color: #444;
+}
+
+@media screen and (max-width: 700px) {
+  .top{
+    display: block!important;
+  }
+  .about .desc{
+    padding-left: 0;
+  }
+}
