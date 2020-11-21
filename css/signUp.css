@@ -40,6 +40,7 @@
 }
 input.red{
   border: 1px solid #fd1200;
+  background: #ffa7a7;
 }
 .submit{
   text-align: right;

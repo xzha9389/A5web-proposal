@@ -25,18 +25,53 @@
   flex-wrap: wrap;
   padding-bottom: 40px;
 }
-.product .list{
+.product .list-con{
   width: 50%;
-  padding-right: 30px;
+  padding: 20px 0 40px;
+}
+.product .list{
   display: flex;
-  padding-bottom: 40px;
-  padding-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 7px 7px 20px 0 #e4e4e4;
+}
+.product .list .left .pos{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 .product .list .left img{
-  display: block;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product .list .left  img.op1{
+  opacity: 1;
+}
+.product .list .left  img.op0{
+  opacity: 0;
+}
+.product .list .left  img.hid{
+  animation:opcityHid 0.8s;
+}
+.product .list .left  img.show{
+  animation:opcityShow 0.8s;
+}
+.product .list .left  img.hid{
+  animation:opcityHid 0.8s;
+}
+@keyframes opcityShow {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+@keyframes opcityHid {
+  from {opacity: 1}
+  to {opacity: 0}
 }
 .product .list .left .buy{
   width: 100px;
@@ -57,6 +92,10 @@
   border-color: #4CAF50;
   box-shadow: 7px 7px 15px 0 #868686;
 }
+.product .list .right{
+  flex: 1;
+  word-break: break-all;
+}
 .product .list .right div{
   color: #666;
   font-size: 14px;
@@ -64,8 +103,11 @@
   padding-bottom: 5px;
   padding-left: 12px;
 }
+.product .list .right div strong{
+  color: #666;
+}
 @media screen and (max-width: 700px) {
-  .product .list{
+  .product .list-con{
     width: 100%;
   }
 }

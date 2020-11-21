@@ -9,6 +9,7 @@ window.onload=function () {
   changeHeight();
 
   var Answer=document.querySelector('#Answer');
+  var satisfied=document.querySelector('#satisfied');
   var submit=document.querySelector('#submit');
   submit.addEventListener('click',function () {
     if(Answer.value){
@@ -16,8 +17,18 @@ window.onload=function () {
     }else {
       Answer.className='red inputtext'
     }
+    if(satisfied.value){
+      satisfied.className='inputtext'
+    }else {
+      satisfied.className='red inputtext'
+    }
   })
   Answer.addEventListener('input',function () {
+    if(this.value){
+      this.className='inputtext'
+    }
+  })
+  satisfied.addEventListener('input',function () {
     if(this.value){
       this.className='inputtext'
     }

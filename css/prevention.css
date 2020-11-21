@@ -12,6 +12,7 @@
   line-height: 26px;
   padding-bottom: 24px;
   font-weight: bold;
+  color: #3f51b5;
 }
 .text-ul{
   padding-bottom: 24px;
@@ -98,6 +99,7 @@
 }
 .inputtext.red{
   border: 1px solid #fd1200;
+  background: #ffa7a7;
 }
 .submit{
   text-align: right;

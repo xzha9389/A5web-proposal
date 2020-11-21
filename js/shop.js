@@ -6,13 +6,24 @@ window.onload=function () {
   var current=1;
   function check(){
     for (var i=0;i<4;i++){
-      Img1[i].style.display= current===1?'block':'none';
-      Img2[i].style.display= current===2?'block':'none';
-      Img3[i].style.display= current===3?'block':'none';
+      if (current===1){
+        Img1[i].className='img1 op0 hid';
+        Img2[i].className='img2 op1 show';
+        Img3[i].className='img3 op0';
+      } else if (current===2){
+        Img1[i].className='img1 op0';
+        Img2[i].className='img2 op0 hid';
+        Img3[i].className='img3 op1 show';
+      } else if (current===3){
+        Img1[i].className='img1 op1 show';
+        Img2[i].className='img2 op0';
+        Img3[i].className='img3 op0 hid';
+      }
     }
   }
 
   function exec() {
+    check()
     if (current===1){
       current=2;
     }else if (current===2){
@@ -20,7 +31,6 @@ window.onload=function () {
     }else if (current===3){
       current=1;
     }
-    check()
   }
   setInterval(exec,2500)
 }
