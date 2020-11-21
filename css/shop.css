@@ -1,0 +1,53 @@
+.title{
+  color: #673ab7;
+  font-size: 30px;
+  line-height: 40px;
+  padding: 20px 0;
+  text-align: center;
+}
+.remind{
+  color: #ff5572;
+  font-size: 28px;
+  line-height: 40px;
+  padding: 20px 0;
+}
+
+.product{
+  display: flex;
+  flex-wrap: wrap;
+}
+.product .list{
+  width: 50%;
+  padding-right: 30px;
+  display: flex;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+.product .list .left img{
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+.product .list .left .buy{
+  width: 100px;
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  border: 1px solid #444;
+  text-align: center;
+  cursor: pointer;
+  color: #444;
+}
+.product .list .right div{
+  color: #666;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+}
+@media screen and (max-width: 700px) {
+  .product .list{
+    width: 100%;
+  }
+}
